@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: docanalyzer-ai
+    runtime: python
+    buildCommand: "apt-get install -y tesseract-ocr; pip install -r requirements.txt; python -m spacy download en_core_web_sm"
+    startCommand: "uvicorn src.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: AI_BACKEND
+        value: huggingface
+      - key: API_KEY
+        value: docanalyzer-guvi-2026

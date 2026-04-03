@@ -52,9 +52,8 @@ def _extract_docx(data: bytes) -> str:
     paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
     return "\n\n".join(paragraphs)
 
-
 def _extract_image(data: bytes) -> str:
-    logger.info("Extracting text from image via OCR")
+    return "OCR not supported in deployed version"
 
     try:
         print("Using Tesseract at:", pytesseract.pytesseract.tesseract_cmd)
