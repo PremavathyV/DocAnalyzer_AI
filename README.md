@@ -1,12 +1,12 @@
 # Document Analysis & Extraction API
 
-An AI-powered backend that extracts, analyzes, and summarizes content from PDF, DOCX, and image files.
+An AI-powered backend that extracts, analyzes, and summarizes content from PDF, DOCX
 
 ---
 
 ## Features
 
-- Multi-format support: PDF, DOCX, PNG/JPG/TIFF images
+- Multi-format support: PDF, DOCS
 - Text extraction: PyMuPDF (PDF), python-docx (DOCX), Tesseract OCR (images)
 - AI summarization: `facebook/bart-large-cnn` via HuggingFace Transformers
 - Named entity recognition: spaCy `en_core_web_sm` — people, orgs, locations, dates, money
