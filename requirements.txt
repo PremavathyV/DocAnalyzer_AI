@@ -1,12 +1,7 @@
 fastapi
-uvicorn[standard]
+uvicorn
 python-multipart
-aiofiles
+pillow
 pytesseract
-Pillow
 python-docx
 PyMuPDF
-transformers
-torch
-spacy
-python-dotenv
