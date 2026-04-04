@@ -22,7 +22,6 @@ An AI-powered backend that extracts, analyzes, and summarizes content from PDF, 
 | API | FastAPI + Uvicorn |
 | PDF | PyMuPDF (fitz) |
 | DOCX | python-docx |
-| OCR | pytesseract + Pillow |
 | Summarization | HuggingFace Transformers (BART) |
 | NER | spaCy |
 | Sentiment | HuggingFace Transformers (DistilBERT) |
